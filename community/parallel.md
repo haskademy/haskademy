@@ -66,6 +66,7 @@ We'll also get familiar with `criterion`, a framework for benchmarking performan
 3. Copy the `Sudoku.hs` file from `parconc-examples` into `parconc-bench/src/Sudoku.hs`
 4. Get the project building. This will mostly involve editing the `package.yaml` file that `stack` generates to have the right dependencies listed.
 5. Add a `benchmark` in the `package.yaml` and [write benchmarks for the various parallelism strategies from the book](http://www.serpentine.com/criterion/tutorial.html)
+6. One of the RTS flags is `+RTS -N $NUMBER_OF_CORES -RTS`. The number passed to `-N` tells the run time system how many hardware cores to run on. Experiment with this setting to see what gives you the best performance.
 
 ## Week 2: Chapter 3
 
